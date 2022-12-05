@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Project-1</title>
+</head>
+<body>
+
+    <img onclick="pic2()" id="mypic" src="./apple img.png">
+
+    <h1>Click apple image to get banana image</h1>
+    
+    <script>
+
+        function apple(){
+            document.body.style.backgroundImage = "url('apple img.png')"
+            document.body.style.backgroundRepeat = "no-repeat";
+            document.body.style.backgroundSize = "520px 520px";
+        }
+
+        function orange(){
+            document.body.style.backgroundImage = "url('orange img.png')"
+            document.body.style.backgroundRepeat = "no-repeat";
+            document.body.style.backgroundSize = "520px 520px";
+        }
+
+        function pic2(){
+            document.getElementById("mypic").src = "banana.jfif";
+        }
+    </script>
+
+</body>
+</html>
